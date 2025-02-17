@@ -18,18 +18,10 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "app/_lib/placeholder-data.ts",
-    "scripts/seed.js"
-, "app/_components/master-data/contractType/delete.tsx", "app/_lib/actions/contractType.ts", "app/_components/master-data/contracts/documentViewer.tsx", "app/(routes)/dashboard/(master-data)/tasks/page.jsx", "app/(routes)/dashboard/settings/plusicon.js"  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
