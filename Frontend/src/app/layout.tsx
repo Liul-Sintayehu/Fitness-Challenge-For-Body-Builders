@@ -42,7 +42,9 @@ export default async function RootLayout({
           <SidebarProvider defaultOpen={defaultOpen}>
             <AppSidebar />
             <main className="w-full">
-              <SidebarTrigger className="absolute" />
+              <div className="w-full bg-primary ">
+                <SidebarTrigger className="text-white rounded-none" />
+              </div>
               {children}
             </main>
           </SidebarProvider>

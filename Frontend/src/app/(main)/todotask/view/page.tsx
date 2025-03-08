@@ -4,6 +4,7 @@ import { DataTable } from "../../../common/ui/Datatable/Datatable";
 import { columns } from "./components/Column";
 import useSWR from "swr";
 import { fetchTasks } from "@/lib/api/queries/todotasks/fetch";
+import { Button } from "@/components/ui/button";
 
 export default function page() {
   const {
@@ -61,6 +62,7 @@ export default function page() {
           className="border p-2"
         />
       </div>
+      <Button>Test</Button>
       <DataTable
         columns={columns}
         data={filteredUser || []}
